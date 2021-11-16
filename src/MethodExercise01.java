@@ -6,6 +6,7 @@ public class MethodExercise01 {
         int input = myScanner.nextInt();
         Tools01 tool = new Tools01();
         System.out.println(tool.JudgeParity(input));
+        tool.printArray(5,5,'t');
     }
 }
 
@@ -18,5 +19,14 @@ class Tools01 {
             parity = true;
         }
         return parity;
+    }
+
+    public void printArray(int i,int j,char c){
+        for (int m =0;m<i;m++){
+            for(int n = 0;n<j;n++){
+                System.out.print(c+"\t");
+            }
+            System.out.println();
+        }
     }
 }
