@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Recursion01 {
+    public static void main(String[] args) {
+        Scanner myScanner = new Scanner(System.in);
+        int a = myScanner.nextInt();
+        MyTools03 tool = new MyTools03();
+        System.out.println(tool.fibonacci(a));
+    }
+}
+
+class MyTools03 {
+    public int fibonacci(int a) {
+        int b;
+        if (a > 2) {
+            b = fibonacci(a - 1) + fibonacci(a - 2);
+        } else {
+            b = 1;
+        }
+        return b;
+    }
+}
