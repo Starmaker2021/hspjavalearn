@@ -6,6 +6,7 @@ public class Recursion01 {
         int a = myScanner.nextInt();
         MyTools03 tool = new MyTools03();
         System.out.println(tool.fibonacci(a));
+        System.out.println(tool.monkeyEatPeach(1));
     }
 }
 
@@ -18,5 +19,14 @@ class MyTools03 {
             b = 1;
         }
         return b;
+    }
+
+    public int monkeyEatPeach(int a) {
+        if(a == 10){
+            return 1;
+        }
+        else{
+            return 2*(monkeyEatPeach(a+1)+1);
+        }
     }
 }
