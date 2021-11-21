@@ -1,4 +1,4 @@
-package com.weileanan.poly.ploy03;
+package com.weileanan.poly.poly03;
 
 public class Employee {
     private String name;

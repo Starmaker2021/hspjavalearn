@@ -1,4 +1,4 @@
-package com.weileanan.poly.ploy03;
+package com.weileanan.poly.poly03;
 
 public class Manager extends Employee{
    private int bonus;
